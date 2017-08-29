@@ -1,0 +1,80 @@
+body {
+    background-color: #dfdfdf;
+}
+
+a, body {
+    color:#535a65;
+}
+
+footer, .hero, footer a {
+    color: #fcfafa;
+}
+
+footer, .hero {
+    padding:3rem 2rem;
+    background-color: #535a65;
+    text-align: center;
+}
+
+.hero {
+    margin-bottom:3rem;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    color:#1f81aa
+}
+
+li {
+    margin-bottom: 0;
+}
+
+.card p {
+    font-size:1.4rem;
+    margin-bottom: 1rem;
+}
+
+.card h6 {
+    margin-bottom:0;
+}
+
+.card ul {
+    padding-left: 2rem;
+}
+
+section {
+    margin-bottom: 4rem
+}
+
+.img {
+    vertical-align: middle;
+}
+
+#me-img {
+    max-width: 100%;
+    height:auto;
+    border-radius: 2rem;
+    padding:0;
+    margin:0;
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+    .hero {
+        padding:10rem 0;
+    }
+    
+    .hero h5 {
+        margin: 2rem;
+    }
+    
+    h6 {
+        font-size: 1.6rem;
+    }
+}
