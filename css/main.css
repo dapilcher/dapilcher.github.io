@@ -2,6 +2,10 @@ body {
     background-color: #dfdfdf;
 }
 
+hr {
+    border-color: #535a65;
+}
+
 a, body {
     color:#535a65;
 }
@@ -16,8 +20,16 @@ footer, .hero {
     text-align: center;
 }
 
+.hero-icon {
+    display: none;
+    font-size: 8rem;
+}
+
 .hero {
     margin-bottom:3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 footer p {
@@ -28,7 +40,7 @@ footer p {
     text-transform: uppercase;
     letter-spacing: .1rem;
     font-weight: 600;
-    color:#1f81aa
+    color:#1f81aa;
 }
 
 li {
@@ -59,15 +71,73 @@ section {
 #me-img {
     max-width: 100%;
     height:auto;
-    border-radius: 2rem;
+    border-radius: 3rem;
     padding:0;
     margin:0;
 }
 
+.social {
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+button.button-primary {
+    color: #FFF;
+    background-color: #1f81aa;
+    border-color: #1f81aa;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+
+
+
+
+/*---------------Keyframes---------------*/
+
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform:translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-right {
+    from {
+        opacity: 0;
+        transform:translateX(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes grow-left {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+
+
+
+
+/*------------------Media queries---------------------*/
+
 /* Larger than phablet */
 @media (min-width: 550px) {
     .hero {
-        padding:10rem 0;
+        padding:8rem 0;
     }
     
     .hero h5 {
@@ -77,4 +147,55 @@ section {
     h6 {
         font-size: 1.6rem;
     }
+    
+    .hero-icon {
+        display: block;
+    }
+    
+    .hero #icon-box {
+        display: inline-block;
+    }
+    
+    .hero #text-box {
+        display: inline-block;
+        text-align: left;
+        margin-left: 1.5rem;
+    }
+}
+
+
+
+/* Larger than tablet */
+/* Use for animations */
+@media (min-width: 750px) {
+    #icon-box, #text-box, #me-img {
+        opacity: 0;
+        animation: fade-in-right ease 0.4s forwards;
+    }
+    
+    #text-box, #me-img {
+        animation-delay: 0.1s;
+    }
+    
+    #about-me, #my-skills, #this-site, #study {
+        opacity: 0;
+        animation: fade-in-up ease 0.4s forwards;
+    }
+    
+    #my-skills {
+        animation-delay: 0.05s;
+    }
+    #this-site {
+        animation-delay: 0.08s;
+    }
+    #study {
+        animation-delay: 0.1s;
+    }
+    
+    hr {
+        transform: scaleX(0);
+        transform-origin: left;
+        animation: grow-left ease-in 0.3s forwards;
+    }
+    
 }

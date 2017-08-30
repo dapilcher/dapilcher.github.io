@@ -22,6 +22,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="css/main.css">
 
   <!-- Favicon
@@ -33,48 +34,62 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<header class="hero">
-    <h1>Doug Pilcher</h1>
-    <h6>Full Stack Web Developer</h6>
+<header class="hero center">
+    <div id="icon-box">
+        <i class="ion-code hero-icon"></i>
+    </div>
+    <div id="text-box">
+        <h1>Doug Pilcher</h1>
+        <h6>Full Stack Web Developer</h6>
+    </div>
 </header>
 
-<div class="container">
-    <section class="row about">
+<main class="container">
+    <section class="row">
         <div class="three columns img">
             <img src="images/gc_500x500.png" id="me-img"/>
         </div>
-        <div class="nine columns">
+        <div class="nine columns" id="about-me">
             <h6 class="section-title">About Me</h6>
-            <p>I have a B.S. in Informatics with a Music minor from Indiana University. I briefly interned at an internet marketing business in Bloomington, IN, where I developed and maintained WordPress sites. I am currently interning for Ascension Information Services, working with both the web and mobile teams.</p>
+            <p>I have a B.S. in Informatics with a Music minor from Indiana University. I briefly interned at <a href="https://tribeswell.com">Tribeswell</a> where I developed and maintained WordPress sites. I am currently interning at <a href="https://ascension.org/our-work/ascension-information-services">Ascension Information Services</a>, working with both the web and mobile application teams.</p>
+            <p>I am a perpetual student of web development, ever striving to follow and learn new technologies and trends. I am a husband, a father, a musician, and a general nerd. Feel free to <a href="#contact">shoot me an email.</a></p>
         </div>
     </section>
     
+    <hr>
+    
     <section class="row cards">
-        <div class="one-third column card">
+        <div class="one-third column card" id="my-skills">
             <h6 class="section-title">My Skills</h6>
-            <p>Languages I understand</p>
+            <p>Some of my strong skills</p>
             <ul>
                 <li>HTML5</li>
-                <li>CSS</li>
+                <li>CSS3</li>
+                <li>Bootstrap</li>
+                <li>Git</li>
                 <li>Python</li>
                 <li>JavaScript</li>
                 <li>Java</li>
+                <li>Android</li>
             </ul>
         </div>
-        <div class="one-third column card">
+        <div class="one-third column card" id="this-site">
             <h6 class="section-title">This site</h6>
-            <p>Tools I used for this page</p>
+            <p>Tools used for this page</p>
             <ul>
                 <li>HTML5</li>
-                <li>CSS</li>
+                <li>CSS3</li>
                 <li><a href="http://getskeleton.com">Skeleton</a></li>
+                <li><a href="http://ionicons.com">Ionicons</a></li>
                 <li><a href="https://formspree.io">Formspree</a></li>
+                <li>Google Analytics</li>
                 <li><a href="https://coolors.co">Coolors</a></li>
+                <li>Git</li>
             </ul>
         </div>
-        <div class="one-third column card">
+        <div class="one-third column card" id="study">
             <h6 class="section-title">Study</h6>
-            <p>Skills I am currently learning</p>
+            <p>Skills I have been learning recently</p>
             <ul>
                 <li>Django</li>
                 <li>JS tooling</li>
@@ -84,7 +99,7 @@
         </div>
     </section>
     
-    <section class="form">
+    <section class="form" id="contact">
         <h6 class="section-title">Contact Me</h6>
         <form method="POST" action="https://formspree.io/dpilch1@gmail.com">
             <div class="row">
@@ -109,11 +124,11 @@
 
     </section>
 
-</div>
+</main>
 
 <footer>
-    <p><a href="https://www.linkedin.com/in/douglaspilcher">LinkedIn</a> |
-        <a href="https://twitter.com/dapilcher">Twitter</a></p>
+    <a href="https://www.linkedin.com/in/douglaspilcher"><i class="social ion-social-linkedin-outline"></i></a>
+    <a href="https://twitter.com/dapilcher"><i class="social ion-social-twitter-outline"></i></a>
     <p>&copy; 2017 Doug Pilcher</p>
 </footer>
     
