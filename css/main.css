@@ -69,9 +69,10 @@ section {
 }
 
 #me-img {
-    max-width: 100%;
-    height:auto;
     border-radius: 3rem;
+}
+
+#me-img, .project-img {
     padding:0;
     margin:0;
 }
@@ -91,6 +92,24 @@ button:active {
     transform: translateY(2px);
 }
 
+/*
+.project:not(:last-child) {
+	margin-bottom: 4rem;
+}
+*/
+
+.project-img {
+	padding: .3rem;
+/*	border: 1px solid #535a65;*/
+	border-radius: 2.2rem;
+	background-color:rgba(150,150,150,0.7);
+}
+
+.separator {
+	text-align: center;
+	font-size: 5rem;
+	margin: 2rem;
+}
 
 
 
@@ -119,6 +138,17 @@ button:active {
     }
 }
 
+@keyframes fade-in-left {
+    from {
+        opacity: 0;
+        transform:translateX(+15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 @keyframes grow-left {
     from {
         transform: scaleX(0);
@@ -136,6 +166,10 @@ button:active {
 
 /* Larger than phablet */
 @media (min-width: 550px) {
+	.left-column {
+		margin-left: 0;
+	}
+	
     .hero {
         padding:8rem 0;
     }
@@ -168,28 +202,30 @@ button:active {
 /* Larger than tablet */
 /* Use for animations */
 @media (min-width: 750px) {
-    #icon-box, #text-box, #me-img {
+    #icon-box, #text-box, #me-img, #img-angular {
         opacity: 0;
         animation: fade-in-right ease 0.4s forwards;
     }
+	
+	#img-django {
+		opacity: 0;
+		animation: fade-in-left ease 0.4s forwards;
+	}
     
-    #text-box, #me-img {
+    #text-box, #me-img, #img-angular, #study {
         animation-delay: 0.1s;
     }
     
-    #about-me, #my-skills, #this-site, #study {
+    #about-me, #my-skills, #this-site, #study, .project-text {
         opacity: 0;
         animation: fade-in-up ease 0.4s forwards;
     }
     
-    #my-skills {
+    #my-skills, #img-django {
         animation-delay: 0.05s;
     }
     #this-site {
         animation-delay: 0.08s;
-    }
-    #study {
-        animation-delay: 0.1s;
     }
     
     hr {
@@ -198,4 +234,12 @@ button:active {
         animation: grow-left ease-in 0.3s forwards;
     }
     
+}
+
+@media (max-width: 749px) {
+	.row .stack {
+	  width: 100%;
+	  float: left;
+	  box-sizing: border-box;
+	}
 }

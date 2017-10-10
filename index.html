@@ -59,7 +59,7 @@
 <main class="container">
     <section class="row">
         <div class="three columns img">
-            <img src="images/gc_500x500.png" id="me-img"/>
+            <img src="images/gc_500x500.png" class="u-max-full-width" id="me-img"/>
         </div>
         <div class="nine columns" id="about-me">
             <h6 class="section-title">About Me</h6>
@@ -112,6 +112,37 @@
     </section>
   
     <hr>
+	<!-- Add some projects -->
+	<section id="projects">
+		<h4 class="section-title">Projects</h4>
+		
+		<div class="row project" id="project-django">
+			<div class="five columns u-pull-right stack">
+				<img src="images/django-blog-reduced.png" class="project-img u-max-full-width" id="img-django">
+			</div>
+			<div class="seven columns project-text left-column stack">
+				<h6 class="section-title">Django Blog</h6>
+				<p>Of the languages I am familiar with, I have by far the most experience with Python. I felt looking into Django was an obvious choice while deciding which web fameworks I should learn. This project is a candidate for a more fully developed replacement to this current personal site.</p>
+				<p>From this project I learned quite a bit about routing, in Django and the concept in general, as well as gained an understanding of Django models and the Django API.</p>
+			</div>
+		</div>
+		
+		<div class="separator"><span class="ion-more"></span></div>
+		
+		<div class="row project" id="project-angular">
+			<div class="five columns stack">
+				<img src="images/github-viewer-user-reduced.png" class="project-img u-max-full-width" id="img-angular">
+			</div>
+			<div class="seven columns project-text stack">
+				<h6 class="section-title">GitHub Viewer Angular App</h6>
+				<p>This was a tutorial code-along AngularJS application. The user enters a GitHub username and the app makes a HTTP request to the GitHub API and returns a list of the user's repositories.</p>
+				<p>Two significant lessons I took away from this project were the use of promises and JSON objects, and leveraging modular development.</p>
+			</div>
+		</div>
+		
+	</section>
+	
+	<hr>
     
     <section class="form" id="contact">
         <h6 class="section-title">Contact Me</h6>
