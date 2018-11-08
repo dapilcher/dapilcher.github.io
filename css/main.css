@@ -1,5 +1,9 @@
 body {
-    background-color: #dfdfdf;
+    background-image : linear-gradient(to bottom right, #dfdfdf, #c6c6c6);
+}
+
+ul {
+    list-style: circle outside;
 }
 
 hr {
@@ -17,6 +21,7 @@ footer, .hero, footer a {
 footer, .hero {
     padding:3rem 2rem;
     background-color: #535a65;
+    background-image : linear-gradient(to bottom right, #535a65, #3A414C);
     text-align: center;
 }
 
@@ -94,19 +99,19 @@ button:active {
 
 /*
 .project:not(:last-child) {
-	margin-bottom: 4rem;
+    margin-bottom: 4rem;
 }
 */
 
 .project-img {
-	padding: .3rem;
-/*	border: 1px solid #535a65;*/
+    padding: .3rem;
+    /*	border: 1px solid #535a65;*/
 	border-radius: 2.2rem;
 	background-color:rgba(150,150,150,0.7);
 }
 
 .separator {
-	text-align: center;
+    text-align: center;
 	font-size: 5rem;
 	margin: 2rem;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <!-- Basic Page Needs
@@ -28,171 +29,213 @@
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png">
-    
-        
+
+
     <!-- Google Analytics -->
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-105593865-1', 'auto');
         ga('send', 'pageview');
     </script>
 
 </head>
+
 <body>
 
-  <!-- Primary Page Layout
+    <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<header class="hero center">
-    <div id="icon-box">
-        <i class="ion-code hero-icon"></i>
-    </div>
-    <div id="text-box">
-        <h1>Doug Pilcher</h1>
-        <h6>Full Stack Web Developer</h6>
-    </div>
-</header>
+    <header class="hero center">
+        <div id="icon-box">
+            <i class="ion-code hero-icon"></i>
+        </div>
+        <div id="text-box">
+            <h1>Doug Pilcher</h1>
+            <h6>Full Stack Web Developer</h6>
+        </div>
+    </header>
 
-<main class="container">
-    <section class="row">
-        <div class="three columns img">
-            <img src="images/gc_500x500.png" class="u-max-full-width" id="me-img"/>
-        </div>
-        <div class="nine columns" id="about-me">
-            <h6 class="section-title">About Me</h6>
-            <p>I have a B.S. in Informatics with a Music minor from Indiana University. I briefly interned at <a href="https://tribeswell.com">Tribeswell</a> where I developed and maintained WordPress sites. I am currently interning at <a href="https://ascension.org/our-work/ascension-information-services">Ascension Information Services</a>, working with both the web and mobile application teams.</p>
-            <p>I love to learn and pick up new technologies, and I have a passion for web development. I would love an opportunity to utilize and build on my existing skillset in an environment of like-minded individuals.</p>
-            <p>I am a husband, a father, a musician, and a general nerd. Feel free to <a href="#contact">shoot me an email.</a></p>
-        </div>
-    </section>
-    
-    <hr>
-    
-    <section class="row cards">
-        <div class="one-third column card" id="my-skills">
-            <h6 class="section-title">My Skills</h6>
-            <p>Some of my strong skills</p>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Git</li>
-                <li>Python</li>
-                <li>JavaScript</li>
-                <li>Java</li>
-                <li>Android</li>
-            </ul>
-        </div>
-        <div class="one-third column card" id="this-site">
-            <h6 class="section-title">This site</h6>
-            <p>Tools used for this page</p>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li><a href="http://getskeleton.com">Skeleton</a></li>
-                <li><a href="http://ionicons.com">Ionicons</a></li>
-                <li><a href="https://formspree.io">Formspree</a></li>
-                <li>Google Analytics</li>
-                <li>Git</li>
-            </ul>
-        </div>
-        <div class="one-third column card" id="study">
-            <h6 class="section-title">Study</h6>
-            <p>Skills I have been learning recently</p>
-            <ul>
-                <li>JS tooling</li>
-                <li>Vue.js</li>
-                <li>AngularJS</li>
-                <li>Django</li>
-                <li>Anything I can</li>
-            </ul>
-        </div>
-    </section>
-  
-    <hr>
-	<!-- Add some projects -->
-	<section id="projects">
-		<h4 class="section-title">Projects</h4>
-		
-		<div class="row project" id="project-django">
-			<div class="five columns u-pull-right stack">
-				<img src="images/django-blog-reduced.png" class="project-img u-max-full-width" id="img-django">
-			</div>
-			<div class="seven columns project-text left-column stack">
-				<h6 class="section-title">Django Blog</h6>
-				<p>Of the languages I am familiar with, I have by far the most experience with Python. I felt looking into Django was an obvious choice while deciding which web fameworks I should learn. This project is a candidate for a more fully developed replacement to this current personal site.</p>
-				<p>From this project I learned quite a bit about routing, in Django and the concept in general, as well as gained an understanding of Django models and the Django API.</p>
-			</div>
-		</div>
-		
-		<div class="separator"><span class="ion-more"></span></div>
-		
-		<div class="row project" id="project-angular">
-			<div class="five columns stack">
-				<img src="images/github-viewer-user-reduced.png" class="project-img u-max-full-width" id="img-angular">
-			</div>
-			<div class="seven columns project-text stack">
-				<h6 class="section-title">GitHub Viewer Angular App</h6>
-				<p>This was a tutorial code-along AngularJS application. The user enters a GitHub username and the app makes a HTTP request to the GitHub API and returns a list of the user's repositories.</p>
-				<p>Two significant lessons I took away from this project were the use of promises and JSON objects, and leveraging modular development.</p>
-			</div>
-		</div>
-      
-        <div class="separator"><span class="ion-more"></span></div>
-      
-        <div class="row project" id="project-ipsum">
-			<div class="five columns u-pull-right stack">
-				<a href="https://lifeguard-selina-77063.netlify.com/">
-                  <img src="images/ipsum-reduced.png" class="project-img u-max-full-width" id="img-ipsum">
-                </a>
-			</div>
-			<div class="seven columns project-text left-column stack">
-				<h6 class="section-title">Ipsum Beer and Wine</h6>
-				<p>I built this landing page for a development test as a job applicant for a front-end development position.</p>
-				<p>Building this page was good practice utilizing Bootstrap for responsiveness, and a refresher in Sass, which I had not used in a year and a half. I also learned how to use Jekyll to componentize and build the page, and how to deploy and host on Netlify. I enjoyed the workflow with Jekyll, and am sure I will use it more in the future.</p>
-			</div>
-		</div>
-		
-	</section>
-	
-	<hr>
-    
-    <section class="form" id="contact">
-        <h6 class="section-title">Contact Me</h6>
-        <form method="POST" action="https://formspree.io/dpilcher.dev@gmail.com">
-            <div class="row">
-                <div class="one-half column">
-                    <input class="u-full-width" type="text" name="name" placeholder="Your name">
+    <main class="container">
+        <section class="row">
+            <div class="three columns img">
+                <img src="images/gc_500x500.png" class="u-max-full-width" id="me-img" />
+            </div>
+            <div class="nine columns" id="about-me">
+                <h6 class="section-title">About Me</h6>
+                <p>I have a B.S. in Informatics with a Music minor from Indiana University. I briefly interned at <a
+                        href="https://tribeswell.com">Tribeswell</a> where I developed and maintained WordPress sites.
+                    I previously interned and am currently a developer at <a href="https://ascension.org/Our-Work/Ascension-Technologies">Ascension
+                        Technologies</a>, working primarily on Alexa skills development for Ascension Living
+                    fascilities.</p>
+                <p>I love to learn and pick up new technologies, and I have a passion for web development. I would love
+                    an opportunity to utilize and build my skillset in an environment of like-minded individuals.</p>
+                <p>I am a husband, a father, a musician, and a general nerd. Feel free to <a href="#contact">shoot me
+                        an email.</a></p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="row cards">
+            <div class="one-third column card" id="my-skills">
+                <h6 class="section-title">My Skills</h6>
+                <p>Some of my strong skills</p>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Git</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="one-third column card" id="this-site">
+                <h6 class="section-title">This site</h6>
+                <p>Tools used for this page</p>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li><a href="http://getskeleton.com">Skeleton</a></li>
+                    <li><a href="http://ionicons.com">Ionicons</a></li>
+                    <li><a href="https://formspree.io">Formspree</a></li>
+                    <li>Google Analytics</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+            <div class="one-third column card" id="study">
+                <h6 class="section-title">Study</h6>
+                <p>Skills I have been learning recently</p>
+                <ul>
+                    <li>Mastering JavaScript fundamentals</li>
+                    <li>Next.js</li>
+                    <li>Node</li>
+                    <li>Alexa Skills Kit (JavaScript, Java)</li>
+                    <li>GraphQL</li>
+                    <li>Everything I can</li>
+                </ul>
+            </div>
+        </section>
+
+        <hr>
+        <!-- Add some projects -->
+        <section id="projects">
+            <h4 class="section-title">Projects</h4>
+
+            <div class="row project" id="project-flightless">
+                <div class="five columns stack">
+                    <img src="images/flightless-nerd-reduced.png" class="project-img u-max-full-width" id="img-flightless">
                 </div>
-                <div class="one-half column">
-                    <input class="u-full-width" type="email" name="_replyto" placeholder="Your email">
+                <div class="seven columns project-text stack">
+                    <h6 class="section-title">Flightless Nerd Website</h6>
+                    <p>I am developing this website as a freelance side project. It is for a media network with a focus
+                        on video game news and reviews.This site has been my first full-stack, production-grade
+                        project, utilizing a broad set of my skills.</p>
+                    <p>I have learned many valuable lessons throughout the development of this site. To name a few:</p>
+                    <ul>
+                        <li>I have a much deeper understanding of React and in particular Next.js.</li>
+                        <li>I prototyped with Bootstrap but forced myself to strip it out and build everything from
+                            scratch, including the carousel, cards, and navbar.</li>
+                        <li>I gained experience developing and implementing a custom MongoDB API.</li>
+                        <li>I learned a great deal about preparing the site for production, including properly
+                            securing a Node server, setting up a VPS and deploying and running the site with PM2.</li>
+                    </ul>
                 </div>
             </div>
-            <div class="row">
-                <textarea class="u-full-width" name="message" placeholder="Your message"></textarea>
-                
-                <!-- Email subject -->
-                <input type="hidden" name="_subject" value="New submission!" />
-                <!-- Honeypot -->
-                <input type="text" name="_gotcha" style="display:none" />
+
+            <div class="separator"><span class="ion-more"></span></div>
+
+            <div class="row project" id="project-django">
+                <div class="five columns u-pull-right stack">
+                    <img src="images/django-blog-reduced.png" class="project-img u-max-full-width" id="img-django">
+                </div>
+                <div class="seven columns project-text left-column stack">
+                    <h6 class="section-title">Django Blog</h6>
+                    <p>I have a fair amount of experience with Python, so I felt
+                        looking into Django was a good choice while deciding which web fameworks I should learn.</p>
+                    <p>From this project I learned quite a bit about routing, in Django and the concept in general, as
+                        well as gained an understanding of Django models and the Django API.</p>
+                </div>
             </div>
-            <button type="reset">Reset</button>
-            <button class="button-primary u-pull-right" type="submit">Send</button>
-        </form>
 
-    </section>
+            <div class="separator"><span class="ion-more"></span></div>
 
-</main>
+            <div class="row project" id="project-angular">
+                <div class="five columns stack">
+                    <img src="images/github-viewer-user-reduced.png" class="project-img u-max-full-width" id="img-angular">
+                </div>
+                <div class="seven columns project-text stack">
+                    <h6 class="section-title">GitHub Viewer Angular App</h6>
+                    <p>This was a tutorial code-along AngularJS application. The user enters a GitHub username and the
+                        app makes a HTTP request to the GitHub API and returns a list of the user's repositories.</p>
+                    <p>Two significant lessons I took away from this project were the use of promises and JSON objects,
+                        and leveraging modular development.</p>
+                </div>
+            </div>
 
-<footer>
-    <a href="https://www.linkedin.com/in/douglaspilcher" alt="LinkedIn"><i class="social ion-social-linkedin-outline"></i></a>
-    <a href="https://twitter.com/dapilcher" alt="Twitter"><i class="social ion-social-twitter-outline"></i></a>
-    <p>&copy; 2017 Doug Pilcher</p>
-</footer>
+            <div class="separator"><span class="ion-more"></span></div>
 
-<!-- End Document
+            <div class="row project" id="project-ipsum">
+                <div class="five columns u-pull-right stack">
+                    <a href="https://lifeguard-selina-77063.netlify.com/">
+                        <img src="images/ipsum-reduced.png" class="project-img u-max-full-width" id="img-ipsum">
+                    </a>
+                </div>
+                <div class="seven columns project-text left-column stack">
+                    <h6 class="section-title">Ipsum Beer and Wine</h6>
+                    <p>I built this landing page for a development test as a job applicant for a front-end development
+                        position.</p>
+                    <p>Building this page was good practice utilizing Bootstrap for responsiveness, and a refresher in
+                        Sass, which I had not used in some time. I also learned how to use Jekyll to
+                        componentize and build the page, and how to deploy and host on Netlify. I enjoyed the workflow
+                        with Jekyll, and am sure I will use it more in the future.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section class="form" id="contact">
+            <h6 class="section-title">Contact Me</h6>
+            <form method="POST" action="https://formspree.io/dpilcher.dev@gmail.com">
+                <div class="row">
+                    <div class="one-half column">
+                        <input class="u-full-width" type="text" name="name" placeholder="Your name">
+                    </div>
+                    <div class="one-half column">
+                        <input class="u-full-width" type="email" name="_replyto" placeholder="Your email">
+                    </div>
+                </div>
+                <div class="row">
+                    <textarea class="u-full-width" name="message" placeholder="Your message"></textarea>
+
+                    <!-- Email subject -->
+                    <input type="hidden" name="_subject" value="New submission!" />
+                    <!-- Honeypot -->
+                    <input type="text" name="_gotcha" style="display:none" />
+                </div>
+                <button type="reset">Reset</button>
+                <button class="button-primary u-pull-right" type="submit">Send</button>
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/douglaspilcher" alt="LinkedIn"><i class="social ion-social-linkedin-outline"></i></a>
+        <a href="https://twitter.com/dapilcher" alt="Twitter"><i class="social ion-social-twitter-outline"></i></a>
+        <p>&copy; 2017 Doug Pilcher</p>
+    </footer>
+
+    <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+
 </html>
